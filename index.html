@@ -10,41 +10,141 @@
             }
 
             img {
-                height: 200px;
+                height: 150px;
                 width: auto;
+            }
+
+            a {
+                color: black;
+            }
+            
+            body {
+                background-color: black;
+                font-family: Arial;
+            }
+
+            #content {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #section-1 {
+                text-align: center;
+                background-color: white;
+                height: 150px;
+                margin-top: 20px;
+                padding-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            #section-2 {
+                display: flex;
+                width: 900px;
+            }
+
+            #about-me {
+                background-color: white;
+                width: 420px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                padding: 20px;
+            
+            }
+
+
+            #classes {
+                background-color: white;
+                width: 420px;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                padding: 20px;
+            
+            }
+
+            #section-3 {
+                display: flex;
+                width: 900px;
+            }
+
+            #assignments {
+                background-color: white;
+                width: 420px;
+                margin-right: 10px;
+                padding: 20px;
+            }
+
+            #labs {
+                
+                background-color: white;
+                margin-left: 10px;
+                width: 420px;
+                padding: 20px; 
+            }
+
+            h2 {
+                padding: 0px;
+                margin: 0px;
             }
         </style>
         
     </head>
-    <h1>
-        Christopher Jewell
-    </h1>
-    <p>
-        <a href="mailto:crjewell@usc.edu">crjewell@usc.edu</a>
-    </p>
+    <body>
+        <div id="content">
+            <div id="section-1">
+                <h1>
+                    CHRISTOPHER JEWELL
+                </h1>
+                <p>
+                    <a href="mailto:crjewell@usc.edu">crjewell@usc.edu</a>
+                </p>
+            </div>
 
-    <p>Favorite color: <strong>Red</strong></p>
-    <p>Favorite website: <a href="https://www.amazon.com" target="_blank">Amazon</a></p>
-    <p>Favorite activity:</p>
-    <img src="img/activity.jpeg" alt="Swimming and Tanning at the Beach">
-    <p>Fall 2017 Schedule:</p>
-    <ul>
-        <li>ITP 104: Intro to Web Development</li>
-        <li>BME 202: Communications in the Nervous System</li>
-        <li>BME 404: Orthopaedic Biomechanics</li>
-        <li>BME 405: Senior Projects</li>
-        <li>BME 413: Signals and Systems</li>
-        <li>BISC 320: Molecular Biology</li>
-    </ul>
-    <hr>
-    <p>Assignments:</p>
-    <ul>
-        <li><a href="assignment_01/resume.html">Assignment 1: Resume</a></li>
-        <li><a href="assignment_02/interests-page.html">Assignment 2: Interests Page</a></li>
-    </ul>
-    <p>Labs:</p>
-    <ul>
-        <li><a href="index.html">Lab 2: Student Page</a></li>
-        <li><a href="lab_03/updated_resume.html">Lab 3: Updated Resume</a></li>
-    </ul>
+            <div id="section-2">
+                <div id="about-me">
+                    <h2>About Me</h2>
+                    <hr>
+                    <p>Favorite color: <strong>Red</strong></p>
+                    <p>Favorite website: <a href="https://www.amazon.com" target="_blank">Amazon</a></p>
+                    <p>Favorite activity:</p>
+                    <img src="img/activity.jpeg" alt="Swimming and Tanning at the Beach">
+                </div>
+
+                <div id="classes">
+
+                    <h2>Fall 2023 Schedule</h2>
+                    <hr>
+                    <ul>
+                        <li>ITP 104: Intro to Web Development</li>
+                        <li>BME 202: Communications in the Nervous System</li>
+                        <li>BME 404: Orthopaedic Biomechanics</li>
+                        <li>BME 405: Senior Projects</li>
+                        <li>BME 413: Signals and Systems</li>
+                        <li>BISC 320: Molecular Biology</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="section-3">
+                <div id="assignments">
+                    <h2>Assignments</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="assignment_01/resume.html">Assignment 1: Resume</a></li>
+                        <li><a href="assignment_02/interests-page.html">Assignment 2: Interests Page</a></li>
+                    </ul>
+                </div>
+
+                <div id="labs">
+                    <h2>Labs</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="index.html">Lab 2: Student Page</a></li>
+                        <li><a href="lab_03/updated_resume.html">Lab 3: Updated Resume</a></li>
+                        <li><a href="index.html">Lab 4: Updated Student Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

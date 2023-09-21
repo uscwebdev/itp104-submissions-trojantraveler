@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MEDesign Interest Form</title>
+    <style>
+
+        body {
+            font-family: Arial
+        }
+
+        h1 {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        #form {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .form-row {
+            margin: 10px 0px;
+            height: 25px;
+            line-height: 25px;
+            display: flex;
+        }
+
+        .form-label {
+            padding-right: 10px;
+            text-align: right;
+            width: 200px;
+        }
+
+        .response {
+            width: 500px;
+            border-radius: 3px;
+            border: 1px solid grey;
+            
+        }
+
+        #submit-button {
+            margin-left: 210px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #900;
+            color: white;
+            border: 1px solid black;
+        }
+
+        #clear-button {
+            margin-left: 10px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            
+        }
+
+        #accept {
+            margin: 0px 10px;
+        }
+
+        .age {
+            margin: 0px 10px;
+        }
+
+        .available {
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MEDesign Interest Form</h1>
+        
+    <div id="form">
+        <form action="confirmation.html">
+            <div class="form-row">
+                <div class="form-label"><label for="first-name">First Name:</label></div>
+                <input class="response" type="text" placeholder="Tommy" id="first-name">
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label for="last-name">Last Name:</label></div>
+                <input class="response" type="text" placeholder="Trojan" id="last-name">
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label for="email">Email:</label></div>
+                <input class="response" type="email" placeholder="tommytrojan@usc.edu" id="email">
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label for="phone">Phone Number:</label></div>
+                <input class="response" type="text" placeholder="(123) 456-7890" id="phone">
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label>Year:</label></div>
+                <label><input type="radio" name="year" class="age">Freshman</label>
+                <label><input type="radio" name="year" class="age">Sophomore</label>
+                <label><input type="radio" name="year" class="age">Junior</label>
+                <label><input type="radio" name="year" class="age">Senior</label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label>Availability (After 8 PM):</label></div>
+                <label><input type="checkbox" class="available">Monday</label>
+                <label><input type="checkbox" class="available">Tuesday</label>
+                <label><input type="checkbox" class="available">Wednesday</label>
+                <label><input type="checkbox" class="available">Thursday</label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label for="project-choice">Top Project Choice:</label></div>
+                <select id="project-choice">
+                    <option>-- Select Project --</option>
+                    <option>Prosthetic for Dogs</option>
+                    <option>Portable Heart Monitor</option>
+                    <option>EKG Helmet</option>
+                    <option>Gait Monitoring Cane</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"><label for="comments">Comments:</label></div>
+                <textarea class="response" id="comments" placeholder="Additional comments or concerns"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"></div>
+                <label><input type="checkbox" id="accept">I accept terms and conditions</label>
+            </div>
+
+            <div class="form-row">
+                <button id="submit-button" type="submit"><strong>Send</strong></button>
+                <button id="clear-button" type="reset"><strong>Clear</strong></button>
+            </div>
+        </form>
+    </div>
+
+</body>
+    
+</html>

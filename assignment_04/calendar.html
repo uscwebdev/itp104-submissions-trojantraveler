@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar | Christopher Jewell</title>
+        <style>
+            #header {
+                font-family: Arial;
+                color: white;
+                width: 1000px;
+                height: 200px;
+                line-height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: 1.5em;
+                background-image: url("img/header.jpeg");
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            #calendar {
+                font-family: Arial;
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th {
+                font-weight: bold;
+                border: 2px solid black;
+                background-color: black;
+                color: white;
+                width: 140.5px;
+                height: 60px;
+            }
+
+            td {
+                font-weight: bold;
+                text-decoration: solid;
+                border: 2px solid black;
+                width: 120.5px;
+                height: 120.5px;
+                vertical-align: top;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-right: 10px;
+
+            }
+
+            .wrong-month {
+                color: grey;
+                background-size: cover;
+                background-image: url("img/line-pattern.png")
+            }
+
+            #birthday {
+                color: white;
+                font-weight: bolder;
+                text-decoration: underline;
+                background-image: url("img/cake.jpeg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            #concert {
+                color: white;
+                font-weight: bolder;
+                text-decoration: underline;
+                background-image: url("img/sour.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            #first-class {
+                color: white;
+                font-weight: bolder;
+                text-decoration: underline;
+                background-image: url("img/usc.jpeg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                 
+            }
+
+            .label {
+
+                color: white;
+                text-align: center;
+                vertical-align: center;
+                padding: 10px 2px;
+                margin: 5px 0px;
+                background-color: rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>August 2023</h1>
+        </div>
+
+        <div id="calendar">
+
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+
+                <tr>
+                    <td class="wrong-month">30</td>
+                    <td class="wrong-month">31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td id="concert">18
+                        <div class="label">OLIVIA RODRIGO CONCERT!</div>
+                    </td>
+                    <td>19</td>
+                </tr>
+
+                <tr>
+                    <td>20</td>
+                    <td id="first-class">21
+                        <div class="label">FIRST DAY OF CLASSES!</div>
+                    </td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td id="birthday">29
+                        <div class="label">CHRIS' 21ST BIRTHDAY!</div>
+                    </td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="wrong-month">1</td>
+                    <td class="wrong-month">2</td>
+                </tr>
+            </table>
+        
+        </div>
+
+    </body>
+
+</html>

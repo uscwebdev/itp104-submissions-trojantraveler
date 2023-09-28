@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christopher Jewell | Photo Gallery</title>
+        <style>
+            
+            body {
+                font-family: Arial;
+                margin: 0px;
+                background-color: #FC0
+            }
+            
+            h1 {
+                font-size: 4em;
+                color: #FC0;
+                background-color: #900;
+                height: 200px;
+                margin: 0px;
+                text-align: center;
+                line-height: 200px;
+            }
+
+            #footer {
+                color: #FC0;
+                font-weight: bold;
+                height: 50px;
+                line-height: 50px;
+                margin: 0px;
+                text-align: center;
+                background-color: #900;
+            }
+
+            p {
+                margin: 0px;
+            }
+
+            #gallery {
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+            #row-1 {
+                padding-top: 20px;
+                display: flex;
+                width: 1000px;
+                height: 300px;
+                align-items: center;
+                justify-content: center;
+                vertical-align: center;
+            }
+
+            #row-2 {
+                width: 1000px;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .photo {
+                height: 200px;
+                border: 3px solid #FC0;
+                padding: 20px;
+            }
+
+            .caption {
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                visibility: hidden;
+                color: #900;
+                
+            }
+
+            .photo:hover + .caption{
+                visibility: visible;
+                font-weight: bold;  
+            }
+
+            .photo:hover {
+                border: 3px solid #900;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CHRIS'S FRIENDS!</h1>
+
+        <div id="gallery">
+            <div id="row-1">
+                <div class="img-container">
+                    <img class="photo" src="img/pic-1.jpg" alt="Chris and Helen">
+                    <p class="caption">CHRIS AND HELEN</p>
+                </div>
+
+                <div class="img-container">
+                    <img class="photo" src="img/pic-2.jpeg" alt="Chris and Livy">
+                    <p class="caption">CHRIS AND LIVY</p>
+                </div>
+
+                <div class="img-container">
+                    <img class="photo" src="img/pic-3.JPG" alt="Chris and Friends on Gameday">
+                    <p class="caption">CHRIS AND FRIENDS (ON GAMEDAY!)</p>
+                </div>
+            </div>
+
+            <div id="row-2">
+                <div class="img-container">
+                    <img class="photo" src="img/pic-4.jpeg" alt="Chris and Elizabeth">
+                    <p class="caption">CHRIS AND ELIZABETH</p>
+                </div>
+
+                <div class="img-container">
+                    <img class="photo" src="img/pic-5.jpeg" alt="Chris and Friends at Hibachi">
+                    <p class="caption">CHRIS AND FRIENDS (AT HIBACHI!)</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"><p>Christopher Jewell &copy; 2023</p></div>
+    </body>
+</html>

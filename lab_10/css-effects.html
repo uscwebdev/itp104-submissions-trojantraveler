@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Effects | Christopher Jewell</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ITP 104, HTML, CSS, Halloween">
+        <meta name="description" content="ITP 104 CSS Effects Assignment">
+
+        <style>
+            
+            @font-face {
+                src: url("font/halloween.ttf");
+                font-family: "Halloween";
+            }
+            
+            body {
+                font-family: "Halloween", sans-serif;
+                background-color: rgb(255, 196, 17);
+                margin: 0px;
+            }
+
+            #header {
+                text-align: center;
+                height: 100px;
+                line-height: 100px;
+                background-color: black;
+                color: rgb(255, 196, 17);
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            #img-container {
+                width: 1200px;
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 100px;
+            }
+            
+            .photo {
+                width: 400px;
+                height: 100%;
+            }
+
+            #footer {
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                background-color: black;
+                color: rgb(255, 196, 17)
+            }
+
+            #photo-1 {
+                transform: translateX(400px) rotate(-10deg);
+                transition: all 1s ease;
+            }
+
+            #photo-2 {
+                transform: rotate(10deg);
+                transition: all 1s ease;
+            }
+
+            #photo-3 {
+                transform: translateX(-400px) rotate(30deg);
+                transition: all 1s ease;
+            }
+
+            #img-container:hover .photo {
+                transform: translate(0px);
+                transform: rotate(0deg);
+                transition: all 1s ease;
+            }
+
+            #captions {
+                display: flex;
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .caption {
+                text-align: center;
+                font-weight: bold;
+                width: 400px;
+                opacity: 0;
+                padding-bottom: 100px;
+                transition: all 500ms;
+            }
+
+            #img-container:hover + #captions .caption {
+                opacity: 1;
+                transition: all 500ms ease 1s;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>HAPPY HALLOWEEN!</h1>
+        </div>
+
+        <div id="img-container">
+            <img src="img/costume-1.JPG" class="photo" id="photo-1" alt="One (Stranger Things)">
+            <img src="img/costume-2.JPG" class="photo" id="photo-2" alt="Patrick Batemen (American Psycho)">
+            <img src="img/costume-3.JPG" class="photo" id="photo-3" alt="Tate Langdon (American Horror Story)">
+        </div>
+
+        <div id="captions">
+
+            <p class="caption">One (Stranger Things)</p>
+            <p class="caption">Patrick Batemen (American Psycho)</p>
+            <p class="caption">Tate Langdon (American Horror Story)</p>
+
+        </div>
+
+        <div id="footer">
+            <p>Christopher Jewell &copy; 2023</p>
+        </div>
+    </body>
+</html>

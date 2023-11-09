@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Puzzle | Christopher Jewell</title>
+        <style>
+            
+            @font-face {
+                src: url("font/gunship.ttf");
+                font-family: "Gunship";
+            }
+            
+            body {
+                font-family: "Gunship", sans-serif;
+                margin: 0px;
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            #header {
+                height: 120px;
+                line-height: 120px;
+                text-align: center;
+                color: white;
+                background-color: black;
+            }
+
+            #puzzle {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #footer {
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+                background-color: black;
+            }
+
+            .puzzle-piece {
+                width: 200px;
+                height: auto;
+                margin: 0px;
+                background-color: white;
+            }
+
+            #p-1 {
+                position: relative;
+                left: 10px;
+                top: 20px;
+                box-shadow: 0px 0px 20px grey;
+            }
+
+            #p-3 {
+                position: relative;
+                top: 20px;
+                right: 20px;
+                box-shadow: 0px 0px 20px grey;
+            }
+
+            #p-5 {
+                position: relative;
+                right: 30px;
+                top: 10px;
+                box-shadow: 0px 0px 20px grey;
+            }
+
+            #p-9 {
+                position: relative;
+                bottom: 30px;
+                right: 5px;
+                box-shadow: 0px 0px 20px grey;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="header">
+            <h1>WALL-E Puzzle</h1>
+        </div>
+
+        <div id="puzzle">
+
+            <img id="p-1" class="puzzle-piece" src="img/row-1-column-1.png" alt="WALL-E Piece #1">
+            <img id="p-2" class="puzzle-piece" src="img/row-1-column-2.png" alt="WALL-E Piece #2">
+            <img id="p-3" class="puzzle-piece" src="img/row-1-column-3.png" alt="WALL-E Piece #3">
+    
+            <img id="p-4" class="puzzle-piece" src="img/row-2-column-1.png" alt="WALL-E Piece #4">
+            <img id="p-5" class="puzzle-piece" src="img/row-2-column-2.png" alt="WALL-E Piece #5">
+            <img id="p-6" class="puzzle-piece" src="img/row-2-column-3.png" alt="WALL-E Piece #6">
+
+            <img id="p-7" class="puzzle-piece" src="img/row-3-column-1.png" alt="WALL-E Piece #7">
+            <img id="p-8" class="puzzle-piece" src="img/row-3-column-2.png" alt="WALL-E Piece #8">
+            <img id="p-9" class="puzzle-piece" src="img/row-3-column-3.png" alt="WALL-E Piece #9">
+            
+        </div>
+
+        <div id="footer">
+            <p>Christopher Jewell | 2023</p>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="plugins/draggabilly.pkgd.min.js"></script>
+    <script>
+        var $draggable = $('#p-1').draggabilly();
+        var $draggable = $('#p-2').draggabilly();
+        var $draggable = $('#p-3').draggabilly();
+        var $draggable = $('#p-4').draggabilly();
+        var $draggable = $('#p-5').draggabilly();
+        var $draggable = $('#p-6').draggabilly();
+        var $draggable = $('#p-7').draggabilly();
+        var $draggable = $('#p-8').draggabilly();
+        var $draggable = $('#p-9').draggabilly();
+    </script>
+    </body>
+    
+</html>

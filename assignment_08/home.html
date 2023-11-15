@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | CJ</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="apple-touch-icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Christopher Jewell, Portfolio, Final Project, ITP 104">
+    <meta name="description" content="A catalogue of Chris. Explore the years of work that has lead to his career as an engineer and designer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @font-face {
+            src: url("font/san-francisco.otf");
+            font-family: "San Francisco";
+        }
+
+        #landing-animation {
+            scroll-snap-align: start;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0px;
+            justify-content: center;
+            background-color: black;
+            width: auto;
+        }
+
+        #hello {
+            scroll-snap-align: start;
+            scroll-margin: 70px;
+            display: block;  /* Gives the content a width */
+            width: 100vw; /* Width takes up 100% of the screen */
+            transform: translateX(100%); /* Start animation off screen*/
+            animation: move 20s linear infinite /* Moves across the screen from left to right every 20s */
+        }
+
+        @keyframes move {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        #hello p {
+            font-size: 4em;
+        }
+
+        #introducing-me {
+            scroll-snap-align: start;
+            scroll-margin: 70px;
+            display: flex;
+        }
+
+        #name {
+            width: 650px;
+            height: 300px;
+            background-color: black;
+        }
+
+        #name h2 {
+            font-weight: bold;
+            font-size: 8em;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #name p {
+            font-size: 1.5em;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #selfie {
+            background-color: black;
+            width: 300px;
+            height: 300px;
+        }
+
+        #selfie img {
+            position: relative;
+            /* left: 100px; */
+            height: 150%;
+            bottom: 120px;
+            right: 70px;
+            vertical-align: center;
+            transition: 1s ease;
+        }
+
+        #selfie:hover img {
+            transform: scale(1.3) rotate(-20deg) translateY(-30px);
+            transition: 1s ease;
+        }
+
+        #about-me-container {
+            scroll-snap-align: start;
+            scroll-margin: 70px;
+            display: flex;
+        }
+
+        #about-me-1 {
+            background-color: black;
+            width: 600px;
+            height: 300px;
+            font-size: 6.5em;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #about-me-1 p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #a-1 {
+            transition: 400ms ease-in-out;
+            opacity: 0;
+        }
+
+        #a-2 {
+            transform: translateY(-248px);
+            transition: 400ms ease-in-out;
+            opacity: 0;
+        }
+
+        #a-3 {
+            transform: translateY(-500px);
+        }
+
+        #about-me-1:hover #a-1 {
+            transform: translateX(10px) translateY(10px);
+            color: #444;
+            opacity: 1;
+            transition: 400ms ease-in-out;
+        }
+
+        #about-me-1:hover #a-2 {
+            visibility: visible;
+            color: #AAA;
+            opacity: 1;
+            transform: translateY(-245px) translateX(5px);
+            transition: 400ms ease-in-out;
+        }
+
+        #about-me-2 {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 1.5em;
+            width: 300px;
+        }
+
+        #bio-container {
+            background-color: #BBB;
+            border-radius: 4px;
+            width: 940px;
+            height: 150px;
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        #skills {
+            scroll-snap-align: start;
+            scroll-margin: 70px;
+        }
+
+        #skills-header {
+            font-size: 4em;
+            margin: 0px;
+            padding: 10px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        #skills-header p {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #s-2 {
+            transform: translateY(-100px);
+            transition: 1s ease;
+        }
+
+        #s-3 {
+            transform: translateY(-200px);
+            transition: 1s ease;
+            
+        }
+
+        #s-4 {
+            transform: translateY(-300px);
+            transition: 1s ease;
+            
+        }
+
+        #skills:hover #s-2 {
+            transform: translateX(250px) translateY(-100px);
+            color: lightgray;
+            transition: 1s ease;
+        }
+
+        #skills:hover #s-3 {
+            transform: translateX(500px) translateY(-200px);
+            color: grey;
+            transition: 1s ease;
+        }
+
+        #skills:hover #s-4 {
+            transform: translateX(750px) translateY(-300px);
+            color: #444;
+            transition: 1s ease;
+        }
+
+        #skill-container {
+            display: flex;
+            width: 1000px;
+        }
+
+        .skill-title {
+            height: 50px;
+            width: 230px;
+            line-height: 50px;
+            padding: 10px;
+            color: grey;
+        }
+
+        .skill-title h3 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .skill-list {
+            padding: 10px;
+            width: 230px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 500ms ease;
+        }
+
+        .skill-title:hover + .skill-list {
+            visibility: visible;
+            opacity: 1;
+            transition: 500ms ease;
+        }
+
+        .skill-title:hover {
+            /* text-decoration: underline; */
+            color: black;
+            background-color: white;
+            transform: translateX(-5px) translateY(-5px);
+            transition: 500ms ease;
+        }
+
+        .skill-list ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        #explore {
+            scroll-margin: 70px;
+            scroll-snap-align: start;
+        }
+
+        #explore-container {
+            display: flex;
+        }
+
+        #explore h2 {
+            font-size: 5em;
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #work-animation {
+            width: 333px;
+            height: 333px;
+            background: url(img/work.png) left top;
+            filter: grayscale(1);
+        }
+
+        #designs-animation {
+            width: 333px;
+            height: 333px;
+            background: url(img/designs.png) left top;
+            filter: grayscale(1);
+        }
+
+        #contact-animation {
+            filter: grayscale(1);
+            width: 333px;
+            height: 333px;
+            background: url(img/contact.png) left top;
+        }
+    </style>
+</head>
+
+<body class="stop-scroll">
+    <div id="landing-animation">
+        <dotlottie-player src="https://lottie.host/600e4a08-ae36-45f6-9d3b-494983baba9f/EWPFmQCRFf.json"
+            background="transparent" speed="1" style="height: 100vh" autoplay></dotlottie-player>
+    </div>
+
+    <div id="header"></div>
+    <!-- SPACER FOR NAV BAR -->
+
+    <div id="nav">
+        <img id="logo" src="img/logo.svg" alt="Website Logo">
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="">WORK</a></li>
+                <li><a href="">DESIGNS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF NAVIGATION BAR -->
+
+
+    <!-- BEGINNING OF MAIN CONTENT -->
+    <div id=content>
+        <div id="hello">
+            <p>Hello.こんにちは.Ciao.你好. Bonjour. مرحبًا. Hola. 안녕하세요. नमस्ते. Hallo. Salve. Olá. Bonjou. Привет. Ahoj. Привіт.
+                Përshëndetje. Hej. Cześć. Kamusta. Γειά σου.</p>
+        </div>
+        <!-- END OF SCROLLING "HELLO" ANIMATION -->
+        <hr>
+
+        <div id="introducing-me">
+            <div id="name">
+                <h2> I'M CHRIS.</h2>
+                <p> Biomedical-Mechanical Engineer. Designer.</p>
+            </div>
+
+            <div id="selfie">
+                <img src="img/chris.png" alt="Pic of Chris!">
+            </div>
+        </div>
+        <!-- END OF NAME INTRODUCTION HEADER -->
+
+        <hr>
+
+        <!-- <div id="location">
+
+        </div>
+
+        <div id="world">
+        </div> -->
+
+        <div id="about-me">
+
+            <div id="about-me-container">
+                <div id="about-me-1">
+                    <p id="a-1">A LITTLE ABOUT ME.</p>
+                    <p id="a-2">A LITTLE ABOUT ME.</p>
+                    <p id="a-3">A LITTLE ABOUT ME.</p>
+                </div>
+
+                <div id="about-me-2">
+                    <p>I'm a senior studying biomedical-mechanical engineering at</p>
+                    <img src="img/usc.svg" alt="USC Logo">
+                </div>
+            </div>
+            <!-- END OF ABOUT ME SUB DIV -->
+
+            <div id="bio-container">
+                <div id="bio">
+                    <p>
+                        I have always been fascinated with how things work. With an inkling of curiosity, I am driven to
+                        discover the processes that make things tick - then make more with what I know.
+                        Engineering to me is something of an artform. From the synaptic firing of axons to the mechanized
+                        motions of today’s medical products, I am truly passionate about the discovery of it all.
+                    </p>
+                    
+                </div>
+                <span id="typed"></span>
+            </div>
+            <!-- END OF BIO SUB DIV -->
+        </div>
+        <!-- END OF ABOUT ME DIV -->
+
+        <div id="skills">
+            <div id="skills-header">
+                <p id="s-1">SKILLS</p>
+                <p id="s-2">SKILLS</p>
+                <p id="s-3">SKILLS</p>
+                <p id="s-4">SKILLS</p>
+            </div>
+
+            <div id="skill-container">
+                <div class="skill">
+                    <div class="skill-title">
+                        <h3>ENGINEERING</h3>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>3D Printing</li>
+                            <li>SolidWorks</li>
+                            <li>QSR</li>
+                            <li>Organs-on-Chips</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF SKILL #1 -->
+
+                <div class="skill">
+                    <div class="skill-title">
+                        <h3>PROGRAMMING</h3>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>R</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF SKILL #2 -->
+
+                <div class="skill">
+                    <div class="skill-title">
+                        <h3>DESIGN</h3>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>AfterEffects</li>
+                            <li>CSS, Java</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF SKILL #3 -->
+
+                <div class="skill">
+                    <div class="skill-title">
+                        <h3>INTERPERSONAL</h3>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>Communication</li>
+                            <li>Creativity</li>
+                            <li>Persistent</li>
+                            <li>Passionate</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF SKILL #4 -->
+
+            </div>
+        </div>
+        <!-- END OF SKILLS DIV -->
+
+        <div id="explore">
+            <h2>PICK A BALL. ANY BALL.</h2>
+            <div id="explore-container">
+                <a id="work-animation" href="">
+                </a>
+
+                <a id="designs-animation" href="">
+                </a>
+
+                <a id="contact-animation" href="">
+                </a>
+            </div>
+        </div>
+        <!-- END OF EXPLORE DIV -->
+
+    </div>
+
+    <div id="footer">
+        <p>Christopher Jewell &copy; 2023</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="plugins/rellax.js"></script>
+    <script src="plugins/jquery.smoothscroll.min.js"></script>
+    <script src="plugins/typed.umd.js"></script>
+
+    <script>
+        $('#nav').hide() // Hides navigation bar when site is loaded
+        $('html').smoothScroll(); // Enables smooth scrolling through the webpage
+
+        // Hides the landing animation div after the lottie has played (7 seconds)
+        setTimeout(function () {
+            $('#landing-animation').hide('slow')
+        }, 6000);
+
+        // Enables scrolling through the webpage and reveals the navigation bar
+        setTimeout(function () {
+            $('body').removeClass('stop-scroll')
+            $('#nav').show('slow');
+        }, 7000);
+
+        // Uses typed.js plugin to type out bio paragraph like a terminal
+        var typed = new Typed('#typed', {
+            stringsElement: '#bio',
+            typeSpeed: 20,
+            startDelay: 10000
+        });
+
+        // Animation for "WORK" ball
+        $("#work-animation").hover(
+
+            // Moves through a sprite png to show an animation of the ball
+            function () {
+                var elem1 = $(this);
+                var cur1 = parseInt(elem1.css("background-position-x"));
+                var steps1 = (19647 + cur1) / 333;
+                var time1 = steps1 * .01;
+                var trans1 = "background " + time1 + "s steps(" + steps1 + ", end)";
+                elem1.css("transition", trans1);
+                elem1.css("background-position", "-19647px 0px");
+            },
+
+            // Moves backwards through a sprite png when user unhovers
+            function () {
+                var elem1 = $(this);
+                var cur1 = parseInt(elem1.css("background-position-x"));
+                var steps1 = - cur1 / 333;
+                var time1 = steps1 * 0.01;
+                var trans1 = "background " + time1 + "s steps(" + steps1 + ", end)";
+                elem1.css("transition", trans1);
+                elem1.css("background-position", "0px 0px");
+            }
+        );
+
+        // Animation of "DESIGN" ball
+        $("#designs-animation").hover(
+            function () {
+                var elem2 = $(this);
+                var cur2 = parseInt(elem2.css("background-position-x"));
+                var steps2 = (19647 + cur2) / 333;
+                var time2 = steps2 * 0.01;
+                var trans2 = "background " + time2 + "s steps(" + steps2 + ", end)";
+                elem2.css("transition", trans2);
+                elem2.css("background-position", "-19647px 0px");
+            },
+
+            function () {
+                var elem2 = $(this);
+                var cur2 = parseInt(elem2.css("background-position-x"));
+                var steps2 = - cur2 / 333;
+                var time2 = steps2 * 0.01;
+                var trans2 = "background " + time2 + "s steps(" + steps2 + ", end)";
+                elem2.css("transition", trans2);
+                elem2.css("background-position", "0px 0px");
+            }
+        );
+
+        // Animation of "CONTACT" ball
+        $("#contact-animation").hover(
+            function () {
+                var elem = $(this);
+                var cur = parseInt(elem.css("background-position-x"));
+                var steps = (19647 + cur) / 333;
+                var time = steps * 0.01;
+                var trans = "background " + time + "s steps(" + steps + ", end)";
+                elem.css("transition", trans);
+                elem.css("background-position", "-19647px 0px");
+            },
+
+            function () {
+                var elem = $(this);
+                var cur = parseInt(elem.css("background-position-x"));
+                var steps = - cur / 333;
+                var time = steps * 0.01;
+                var trans = "background " + time + "s steps(" + steps + ", end)";
+                elem.css("transition", trans);
+                elem.css("background-position", "0px 0px");
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

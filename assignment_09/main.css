@@ -1,0 +1,108 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: "San Francisco", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+.stop-scroll {
+    /* Assigned to the body at the beginning of page load.
+    Prevents the user from scrolling until the opening animation ends */
+    overflow: hidden;
+    height: 100vh;
+}
+
+#header {
+    /* Placeholder div for navbar */
+    height: 70px;
+}
+
+#nav {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    z-index: 100;
+    height: 70px;
+    border-bottom: 2px solid white;
+}
+
+#logo {
+    padding: 25px;
+    height: 30px;
+    width: auto;
+    transition: 1s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    height: 70px;
+    width: 150px;
+    transition: 300ms ease;
+}
+
+#navbar li {
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    transition: 300ms ease;
+}
+
+#navbar li:hover {
+    background-color: white;
+    transition: 300ms ease;
+}
+
+#navbar li:hover a {
+    color: black;
+    transition: 300ms ease;
+}
+
+#navbar {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 70px;
+}
+
+#content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+#footer p {
+    color: white;
+    margin: 0px;
+    text-align: center;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Work | CJ</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="apple-touch-icon" type="image/x-icon" href="favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="Christopher Jewell, Work, Research, Engineering">
+        <meta name="description" content="Explore a timeline of my career experiences, ranging from wet lab research to medical device product development.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <style>
+
+            @font-face {
+                src: url("font/san-francisco.otf");
+                font-family: "San Francisco";
+            }
+
+            body {
+                background-color: white;
+                background-image: url("img/grid.jpg");
+                background-size: 30%;
+                color: black;
+            }
+
+            #content {
+                width: 1000px;
+                position: relative;
+                margin-top: 50px;
+            }
+
+
+            .work {
+                width: 1000px;
+                position: relative;
+                display: flex;
+                height: 60vh;
+            }
+            
+            .work-container {
+                padding: 0px;
+                background-color: lightgrey;
+                width: 700px;
+                margin-bottom: 30px;
+            }
+
+            .work-num {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 3em;
+                font-weight: bolder;
+                color: white;
+                background-color: black;
+                margin-bottom: 10px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                z-index: 4;
+            }
+
+            .work-title {
+                padding: 30px;
+                height: 8vh;
+                width: 0px;
+                transition: 1s ease;
+            }
+
+            .work-title h2, p {
+                width: 640px;
+                margin: 0px;
+                opacity: 0.5;
+                transition: 1s ease;
+            }
+
+            .work-container:hover .work-title > p {
+                opacity: 1;
+                transition: 1s ease;
+            }
+
+            .work-container:hover .work-title > h2 {
+                opacity: 1;
+                transition: 1s ease;
+            }
+
+            .work-container:hover .work-title{
+                width: 640px;
+                height: 10vh;
+                transition: 1s ease;
+                background-color: white;
+            }
+
+            .work-container:hover .work-title{
+                width: 640px;
+                height: 10vh;
+                transition: 1s ease;
+                background-color: white;
+            }
+
+            .work-title h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .description {
+                font-size: 1.25em;
+                margin: 30px;
+                margin-top: 10px;
+                padding: 0px;
+            }
+
+            .description ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .description li {
+                padding: 0px;
+                margin: 0px;
+                margin-bottom: 5px;
+            }
+
+            .year {
+                font-size: 1em;
+                font-weight: bolder;
+                opacity: 1;
+                color: black;
+                background-color: lightgrey;
+                margin-top: 50px;
+                margin-left: 90px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                z-index: 3;
+                transition: 500ms ease;
+            }
+
+            .year p {
+                margin: 0px;
+                opacity: 0.5;
+                width: 60px;
+                text-align: center;
+                transition: 500ms ease;
+            }
+
+            .work-container:hover + .year p {
+                color: black;
+                opacity: 1;
+                transform: scale(0.8);
+                transition: 500ms ease;
+            }
+
+            .work-container:hover + .year {
+                transform: scale(1.25);
+                transition: 500ms ease;
+            }
+
+            .line {
+                width: 50px;
+                background-color: black;
+                height: 3px;
+                margin-top: 50px;
+                flex-shrink: 0;
+            }
+
+            #work-content {
+                position: relative;
+                margin-top: 30px;
+            }
+            
+            #work-content::after {
+                position: absolute;
+                content: "";
+                width: 2px;
+                background-color: lightgrey;
+                top: 50px;
+                bottom: 0;
+                right: 30px;
+                z-index: 2;
+            }
+
+            #content::after {
+                content: "";
+                position: absolute;
+                width: 3px;
+                background-color: black;
+                top: 0;
+                bottom: 0;
+                left: 50px;
+                z-index: 1;
+            }
+
+            #footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 100vw;
+            }
+
+            #footer p {
+                opacity: 1;
+                text-align: center;
+                width: 100vw;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- SPACER FOR NAV BAR -->
+
+        <div id="nav">
+            <img id="logo" src="img/logo.svg" alt="Website Logo">
+            <div id="navbar">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="designs.html">DESIGNS</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        
+
+        <div id="content">
+            <div id="work-content">
+                <div class="work">
+        
+                    <div class="work-num">01</div>
+                    <i class="line"></i>
+                    <div class="work-container">
+                        
+                        <div class="work-title">
+                            <h2>DIABETIC NEUROENDOCRINE PATHWAY RESEARCH</h2>
+                            <p>Mount Sinai Hospital, New York City, NY</p>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Developed novel ECI tissue clearing protocols in murine pancreatic and pituitary tissue</li>
+                                <li>Profiled neuroendocrine pathways disrupted by repeated hypoglycemia in diabetic mice</li>
+                                <li>Utilized immunohistochemistry, murine models, confocal microscopy, ImageJ, and Prism8 analyses</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="year">
+                        <p>June</p>
+                        <p>2018</p>
+                    </div>
+                    
+                </div>
+                <div class="work">
+
+                    <div class="work-num">02</div>
+                    <i class="line"></i>
+                    <div class="work-container">
+                        <div class="work-title">
+                            <h2>GLIOBLASTOMA ORGANS-ON-CHIPS RESEARCH</h2>
+                            <p>Terasaki Insititue for Biomedical Innovation, Los Angeles, CA</p>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Synthesized novel gelatin- and hyaluronic acid-based hydrogels to mimic brain rheology</li>
+                                <li>Fabricated microfluidic glioblastoma spheroids-on-chip for chemotherapy drug screening</li>
+                                <li>Performed tensile testing, cell culture, immunocytochemistry, LDH assays, and cell viability quantification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="year">
+                        <p>May</p>
+                        <p>2022</p>
+                    </div>
+                    
+                </div>
+                <div class="work">
+
+                    <div class="work-num">03</div>
+                    <i class="line"></i>
+                    <div class="work-container">
+                        <div class="work-title">
+                            <h2>TEACHING ASSISTANT FOR COMMUNICATIONS OF THE NERVOUS SYSTEM</h2>
+                            <p>University of Southern California, Los Angeles, CA</p>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Instruct weekly discussion sections and manage exams, assignments, and class work</li>
+                                <li>Organize course plans for supplemental instruction regarding class content (10 hours weekly)</li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="year">
+                        <p>January</p>
+                        <p>2023</p>
+                    </div>
+                    
+                </div>
+                <div class="work">
+
+                    <div class="work-num">04</div>
+                    <i class="line"></i>
+                    <div class="work-container">
+                        <div class="work-title">
+                            <h2>PRODUCT DEVELOPMENT INTERN FOR HUMIDIFEYE</h2>
+                            <p>AesculaTech, Los Angeles, CA</p>
+                        </div>
+                        <div class=description>
+                            <ul>
+                            <li>Devised and performed cadaveric rabbit study for biocompatibility protocol of hydrogel punctal plug</li>
+                            <li>Created a qualified clinical database for OUS pilot study data collection using Excel VBA</li>
+                            <li>Developed and modified test methods for design and process V&V of hydrogel-applicator system</li>
+                            <li>Iterated on manufacturing fixturing in SolidWorks for hydrogel microdispensing process</li>          
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="year">
+                        <p>May</p>
+                        <p>2023</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Christopher Jewell &copy; 2023</p>
+        </div>
+    </body>
+</html>

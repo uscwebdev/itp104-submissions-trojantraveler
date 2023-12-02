@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Summary | CJ</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="apple-touch-icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Christopher Jewell, ITP 104, Summary">
+    <meta name="description"
+        content="Explore a timeline of my career experiences, ranging from wet lab research to medical device product development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @font-face {
+            src: url("font/san-francisco.otf");
+            font-family: "San Francisco";
+        }
+
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        #footer {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- SPACER FOR NAV BAR -->
+
+    <div id="nav">
+        <img id="logo" src="img/logo.svg" alt="Website Logo">
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="designs.html">DESIGNS</a></li>
+                <li><a href="summary.html">SUMMARY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF NAVIGATION BAR -->
+
+    <div id="content">
+        <div>
+            <h2>TOPIC</h2>
+            <p>This website acts as a portfolio that catalogues a lot of my experiences in a fun and interactive way!
+            </p>
+        </div>
+        <div>
+            <h2>PURPOSE AND DESCRIPTIONS</h2>
+            <h3>HOME</h3>
+            <ul>
+                <li>This page gives a small insight into me (and my personality)</li>
+                <li>The intro animation uses a Lottie file of my initials</li>
+                <li>The first div uses animations to scroll hello (in a plethora of languages)</li>
+                <li>The second div uses transformations to scale a photo of me, which acts as the top of the "i" in
+                    CHRIS</li>
+                <li>I summarize my motivations and skills in the second two divs, using flexboxes and "typed" plugins.
+                </li>
+                <li>The final div uses sprite images to reveal lottery balls which navigate the user to other pages.
+                </li>
+            </ul>
+            <h3>WORK</h3>
+            <ul>
+                <li>This page summarizes much of my work experiences</li>
+                <li>I used ::after psuedo-elements to add timelines and numbering of the experiences</li>
+                <li>Each experience is animated upon hovering to emphasize whichever experience the user is lookign at
+                </li>
+            </ul>
+            <h3>DESIGNS</h3>
+            <ul>
+                <li>This page shows some of the designs I've made on SolidWorks</li>
+                <li>I used GIFs to display animated 3D revolutions of my CAD files</li>
+                <li>All of the lines are animated to emphasize upon hovering</li>
+            </ul>
+            <h3>CONTACT</h3>
+            <ul>
+                <li>This page contains several ways to contact me, including my resume</li>
+                <li>Each of the contact elements scale upon hovering, and are attached to a Lottie animation</li>
+                <li>The map was generated using Mapbox, which required generating an API</li>
+                <li>The SOCIALS contains my Instagram and LinkedIn</li>
+                <li>All links open in a separate tab</li>
+            </ul>
+        </div>
+        <div>
+            <h2>EXTRAS</h2>
+            <p><strong>Transitions & Transmormations: </strong>Used in transformation of "HELLO" scroll, my face, "a
+                little about me", the skills section, the navbar, and most elements of the WORK and DESIGNS section
+            </p>
+            <p>Used changes in width to reveal wipe animations in WORK and DESIGNS, change in opacity upon hovering,
+                translation of my picture, and translation of 3 of the same text elements for "ABOUT ME" and "SKILLS"
+                in the home page.</p>
+            <p><strong>JS or jQuery: </strong>Used in order to animate the balls upon hover by translating sequentially through the sprite image upon hover;</p>
+            <p>Further, used in order to prevent the user from scrolling when the intro animation plays, then revealing the navbar and hiding the intro animation div.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Christopher Jewell &copy; 2023</p>
+    </div>
+</body>
+
+</html>

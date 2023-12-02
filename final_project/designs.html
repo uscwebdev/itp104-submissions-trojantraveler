@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Designs | CJ</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="apple-touch-icon" type="image/x-icon" href="favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="Christopher Jewell, Designs, SolidWorks, Mechanics">
+        <meta name="description" content="Discover what I've built over the years. From SolidWorks to Arduino, see where I've put my skills to use.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <style>
+            @font-face {
+                src: url("font/san-francisco.otf");
+                font-family: "San Francisco";
+            }
+
+            body {
+                background-color: white;
+                color: black;
+            }
+
+
+            .design {
+                display: flex;
+                align-items: center;
+            }
+
+            #img-1 {
+                height: 200px;
+            }
+
+            #img-2 {
+                height: 300px;
+            }
+
+            #img-4 {
+                height: 200px;
+            }
+
+            #img-5 {
+                height: 200px;
+            }
+
+            .design ul {
+                list-style: none;
+                padding: 0px;
+                padding-left: 20px;
+                margin: 0px;
+            }
+
+            .design li {
+                font-size: 2em;
+                opacity: 0.5;
+                padding-bottom: 5px;
+            }
+
+            .design li:hover {
+                opacity: 1;
+            }
+
+            .design-title {
+                background-color: rgb(0, 0, 0);
+                width: 0px;
+                margin-bottom: 20px;
+                height: 150px;
+                transition: 500ms ease;
+            }
+
+            .design-title h2 {
+                width: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                margin: 0px;
+                opacity: 0.5;
+                transition: 500ms ease;
+            }
+
+            .design-title p {
+                width: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                margin: 0px;
+                opacity: 0.5;
+                transition: 500ms ease;
+            }
+
+            .design-container:hover .design-title h2 {
+                opacity: 1;
+                color: white;
+                transition: 500ms ease;
+            }
+
+            .design-container:hover .design-title p {
+                opacity: 1;
+                color: white;
+                transition: 500ms ease;
+            }
+
+            .design-container:hover .design-title {
+                width: 100%;
+                height: 150px;
+                transition: 500ms ease;
+            }
+
+            #footer {
+                background-color: black;
+                margin-top: 20px;
+            }
+
+            #footer p {
+                margin: 0px;
+                padding: 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- SPACER FOR NAV BAR -->
+
+        <div id="nav">
+            <img id="logo" src="img/logo.svg" alt="Website Logo">
+            <div id="navbar">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="designs.html">DESIGNS</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+
+        <div id="content">
+            <div class="design-container">
+                <div class="design-title">
+                    <h2>PEANUT-DETECTING LATERAL FLOW ASSAY</h2>
+                    <p>USC MEDESIGN, 2022</p>
+                </div>
+                
+                <div class="design">
+                    <div class="img-container">
+                        <img id="img-1" src="img/cassette-1.gif" alt="LFA Cassette (Design 1)">
+                    </div>
+                    <div class="img-container">
+                        <img id="img-2" src="img/cassette-2.gif" alt="LFA Cassette (Design 2)">
+                    </div>
+                    <ul>
+                        <li>Developed two flow assay models using SolidWorks</li>
+                        <li>Used computer stress analysis to determine optimal pressure points</li>
+                        <li>3D printed assay in PLA and designed for injection molding</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="design-container">
+                <div class="design-title">
+                    <h2>ARTICULATING WALL-E</h2>
+                    <p>USC: ITP 308, 2022</p>
+                </div>
+                <div class="design">
+                    <ul>
+                        <li>Fabricated and mated over 178 parts to create a mobile WALL-E in SolidWorks</li>
+                        <li>Created functional gear mates to articulate tracks</li>
+                        <li>Enables 5-DOF eye movement with the ability for WALL-E to fold up into a box!</li>
+                    </ul>
+                    <div class="img-container">
+                        <img id="img-3" src="img/walle.gif" alt="3D WALL-E">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="design-container">
+                <div class="design-title">
+                    <h2>COST-EFFICIENT HOLTER MONITOR</h2>
+                    <p>USC: SENIOR PROJECT, 2022</p>
+                </div>
+                <div class="design">
+                    <div class="img-container">
+                        <img id="img-4" src="img/ekg-1.gif" alt="Holter Monitor Case (Design 1)">
+                    </div>
+                    <div class="img-container">
+                        <img id="img-5" src="img/ekg-2.gif" alt="Holter Monitor Case (Design 2)">
+                    </div>
+                    <ul>
+                        <li>Used SolidWorks to develop two forms of holter monitor casing</li>
+                        <li>Combined soldering techniques and software skills to code for voltage reading in Arduino and LabView</li>
+                        <li>Developed arythmia detection algorithm to detect bradycardia and tachycardia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Christopher Jewell &copy; 2023</p>
+        </div>
+    </body>
+</html>
